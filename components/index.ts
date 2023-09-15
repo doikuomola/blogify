@@ -13,6 +13,7 @@ import MostPopular from './MostPopular';
 import Navbar from './Navbar';
 import Pagination from './Pagination';
 import PostList from './PostList';
+import AuthProvider from './providers/AuthProvider';
 import { ThemeProviders } from './providers/ThemeProviders';
 import SideMenu from './SideMenu';
 import ThemeChanger from './ThemeChanger';
@@ -36,4 +37,5 @@ export {
   Pagination,
   Comments,
   CommentCard,
+  AuthProvider,
 };

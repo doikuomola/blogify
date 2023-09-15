@@ -10,7 +10,7 @@ export default function EditorsPick() {
         </p>
         <h2 className="font-bold">{"Editor's Pick"}</h2>
       </div>
-      <div className="pt-4 flex flex-col gap-1 md:grid grid-cols-2">
+      <div className="pt-4 flex flex-col gap-1 md:grid grid-cols-2 lg:flex lg:flex-col lg:gap-4">
         <SideBarCard />
         <SideBarCard />
         <SideBarCard />

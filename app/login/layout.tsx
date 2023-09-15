@@ -1,5 +1,5 @@
 import { AuthProvider, Footer, Navbar, ThemeProviders } from '@/components';
-import './globals.css';
+import '../../app/globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -20,13 +20,13 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthProvider>
           <ThemeProviders>
-            <header className="max-w-7xl mx-auto">
+            {/* <header className="max-w-7xl mx-auto">
               <Navbar />
-            </header>
+            </header> */}
             <main className="max-w-7xl mx-auto">{children}</main>
-            <footer className=" border-t-2">
+            {/* <footer className=" border-t-2">
               <Footer />
-            </footer>
+            </footer> */}
           </ThemeProviders>
         </AuthProvider>
       </body>

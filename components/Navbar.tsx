@@ -9,7 +9,7 @@ export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <nav className="flex items-center justify-between relative text-sm md:text-lg lg:text-base lg:py-2">
-      <div className="hidden md:flex items-center space-x-2">
+      <div className="hidden md:flex items-center space-x-2 flex-1">
         <Image
           width={48}
           height={48}
@@ -39,7 +39,7 @@ export default function Navbar() {
           className="w-7 h-7 cursor-pointer rounded-full"
         />
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center flex-1">
         <Link
           href="/"
           className="md:text-xl lg:text-2xl font-semibold text-center"
@@ -48,7 +48,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <div className="flex items-center space-2">
+      <div className="flex items-center justify-end space-2 flex-1">
         {!openMenu ? (
           <div className="flex items-center space-x-2">
             <ThemeChanger />
